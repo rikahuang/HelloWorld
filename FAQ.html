@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="FAQ.css" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/73ee127a71.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script type="text/javascript" src="FAQ.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100;0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100;0,400;0,600;1,400;1,600&display=swap'); </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+    
+        <div class="sidePanel sidePanelHide" id="sidePanel">
+            <div class="sidePanelBar"><i class="fa-solid fa-xmark XIcon" onclick="closeSidePanel()"></i></div>
+            <div class="sidePanelMenu">
+                <button class="sidePanelButtons" onclick="diaryPage()">dear diary</button>
+                <button class="sidePanelButtons" onclick="galleryPage()">photos of me</button>
+                <button class="sidePanelButtons" onclick="calculatorPage()">calculator</button>
+                <button class="sidePanelButtons" onclick="contactPage()">reach out</button>
+                <button class="sidePanelButtons" onclick="faqPage()">faq</button>
+            </div>
+        </div>
+
+        <div class="mainWrap">
+
+            <header>
+                <div class="site-header-inner">
+                    <button class="buttoncolor" onclick="openSidePanelV2()"><i class="fa-solid fa-bars buttonlines"></i></button>
+                    <div class="empty">&nbsp;</div>
+                </div>
+            </header>
+
+            <div>
+                <div class="navList">
+                    <ul class="breadcrumbList">
+                        <li class="BCTheStart"><a href="./TheStart.html" class="theStartLink">home</a></li>
+                        <li class="BCFaq">faq</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bottomWrap">
+
+                <div class="pageTitle">faq</div>
+
+                <div class="pageMid">
+                    <p class="introPara">oh hi! i hope you enjoyed your mini adventure, going through my website. after exploring, i'm sure you have some questions for me. if your question is not listed below, please write to me and i'll write back!</p>
+                </div>
+
+                <div class="pageBottom" id="pageBTM">
+                
+                <!--TEST
+                    <div class="faqQs faqFirst">
+                        <div class="empty2">&nbsp;</div>
+                        <div class="question">how old are you?</div>
+                        <i class="fa-solid fa-caret-down dropDown" id="carrot1" onclick="openFAQ(1)"></i>
+                        <i class="fa-solid fa-minus hide dropDown" id="minusBtn1" onclick="closeFAQ(1)"></i>
+                    </div> 
+
+                    <div class="faqAs faqHide" id="faqAnswer1">
+                        <div class="answer"><div class="answerInner cursorDefault">i am currently 4 years old. i was born on april 27th, 2018. my birthday is coming up, so please be prepared to send me a present!</div></div>
+                    </div>
+
+                    <div class="faqQs">
+                        <div class="empty2">&nbsp;</div>
+                        <div class="question">which organization did you come from?</div>
+                        <i class="fa-solid fa-caret-down dropDown" id="carrot2" onclick="openFAQ(2)"></i>
+                        <i class="fa-solid fa-minus hide dropDown" id="minusBtn2" onclick="closeFAQ(2)"></i>
+                    </div>
+
+                    <div class="faqAs faqHide" id="faqAnswer2">
+                        <div class="answer"><div class="answerInner">i came from an organization located in vancouver, called "second chance in life". originally i was from taiwan, but was rescued and brought to vancouver by some amazing people!</div></div>
+                    </div>
+                
+                    <div class="faqQs faqLast">
+                        <div class="empty2">&nbsp;</div>
+                        <div class="question">how much did it cost for the adoption process?</div>
+                        <i class="fa-solid fa-caret-down dropDown" id="carrot3" onclick="openFAQ(3)"></i>
+                        <i class="fa-solid fa-minus hide dropDown" id="minusBtn3"onclick="closeFAQ(3)"></i>
+                    </div>
+
+                    <div class="faqAs faqHide" id="faqAnswer3">
+                        <div class="answer"><div class="answerInner">the adoption fee was $500, which includes a doggy vaccine passport, crate, jacket, and of course, i am neutered and up-to-date on all my vaccines! because i was flying from vancouver to toronto, the plane ticket was also $500!</div></div>
+                    </div>
+                -->
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </body>
+
+
+</html>

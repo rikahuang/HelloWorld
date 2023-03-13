@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="Calculator.css" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/73ee127a71.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script type="text/javascript" src="Calculator.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100;0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100;0,400;0,600;1,400;1,600&display=swap'); </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="sidePanel sidePanelHide" id="sidePanel">
+            <div class="sidePanelBar"><i class="fa-solid fa-xmark XIcon" onclick="closeSidePanel()"></i></div>
+            <div class="sidePanelMenu">
+                <button class="sidePanelButtons" onclick="diaryPage()">dear diary</button>
+                <button class="sidePanelButtons" onclick="galleryPage()">photos of me</button>
+                <button class="sidePanelButtons" onclick="calculatorPage()">calculator</button>
+                <button class="sidePanelButtons" onclick="contactPage()">reach out</button>
+                <button class="sidePanelButtons" onclick="faqPage()">faq</button>
+            </div>
+        </div>
+
+        <div class="mainWrap">
+
+            <header>
+                <div class="wrap">
+                    <div class="site-header-inner">
+                        <button class="buttoncolor" onclick="openSidePanel()"><i class="fa-solid fa-bars buttonlines"></i></button>
+                        <div class="empty">&nbsp;</div>
+                    </div>
+                </div>
+            </header>
+            
+            <div>
+                <div class="navList">
+                    <ul class="breadcrumbList">
+                        <li class="BCTheStart"><a href="./TheStart.html" class="theStartLink">home</a></li>
+                        <li class="BCCalculator">calculator</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <p class="headingOne">how old are you in dog years? <!--how old is your dog in human years?--></p>
+                <P class="headingTwo">try below to find out!</P>
+            </div>
+            
+            <div class="siteBottom">
+
+                <div class="siteBottomLeft">
+                
+                </div>
+                
+                <div class="siteBottomMid">
+
+                    <div class="calculatorBody">
+                        <div class="calculatorDisplay">
+                            <div class="displayHide calc">your age: <input type="number" class="ageInput" id="humanAge"/> </div>
+                            <div class="displayHide calc">your age in dog years is <span id="dogAge"></span></div>
+                        </div>
+
+                        <div class="calcButtonsBody">
+
+                            <div class="calcRow">
+                                <div id="offBtn" class="calcButtons" onclick="offCalculator()">off</div>
+                                <div class="calcButtons" onclick="onCalculator()">on</div>
+                                <div class="calcButtons" onclick="deleteNum()">del</div>
+                                <div class="calcButtons" onclick="convertAge()"><i class="fa-solid fa-check"></i></div>
+                            </div>
+                            <div class="calcRow">
+                                <div class="calcButtons" onclick="resetCalc()"><i class="fa-solid fa-rotate-right"></i></div>
+                                <div class="calcButtons" onclick="pressNum('7')">7</div>
+                                <div class="calcButtons" onclick="pressNum('8')">8</div>
+                                <div class="calcButtons" onclick="pressNum('9')">9</div>
+                            </div>
+                            <div class="calcRow">
+                                <div class="calcButtons">&nbsp;</div>
+                                <div class="calcButtons" onclick="pressNum('4')">4</div>
+                                <div class="calcButtons" onclick="pressNum('5')">5</div>
+                                <div class="calcButtons" onclick="pressNum('6')">6</div>
+                            </div> <div class="calcRow">
+                                <div class="calcButtons" onclick="pressNum('0')">0</div>
+                                <div class="calcButtons" onclick="pressNum('1')">1</div>
+                                <div class="calcButtons" onclick="pressNum('2')">2</div>
+                                <div class="calcButtons" onclick="pressNum('3')">3</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="siteBottomRight">
+                    
+                    <div class="helpBtnDiv" onclick="helpMe()">
+                        <div><i class="fa-solid fa-circle-question helpBtn"></i></div>
+                    </div>
+
+                    <div>
+                        <div class="helpPopUp hide" id="helpPlz">
+                            <div class="speechBbl"><i class="fa-solid fa-message"></i></div>
+                                <div class="helpWords">
+                                    <div>1. press the on button</div>
+                                    <div>2. input your age</div>
+                                    <div>3. press the checkmark button</div>
+                                    <div>4. to try another age, press the refresh button</div>
+                                </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+            </div>
+        
+        </div> 
+
+    </body>
+
+
+</html>

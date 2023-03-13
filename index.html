@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Mochiyuki's Diary</title>
+        <link href="TheStartStyle.css" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/73ee127a71.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script type="text/javascript" src="TheStart.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100;0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100;0,400;0,600;1,400;1,600&display=swap'); </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    
+    </head>
+
+    <body>
+        <div class="sidePanel sidePanelHide" id="sidePanel">
+            <div class="sidePanelBar"><i class="fa-solid fa-xmark XIcon" onclick="closeSidePanel()"></i></div>
+            <div class="sidePanelMenu">
+                <button class="sidePanelButtons" onclick="diaryPage()">dear diary</button>
+                <button class="sidePanelButtons" onclick="galleryPage()">photos of me</button>
+                <button class="sidePanelButtons" onclick="calculatorPage()">calculator</button>
+                <button class="sidePanelButtons" onclick="contactPage()">reach out</button>
+                <button class="sidePanelButtons" onclick="faqPage()">faq</button>
+            </div>
+        </div>
+        
+        <div class="mainWrap">
+
+            <div>
+                <header class="site-header">
+                    <div class="site-header-inner">
+                        <button class="buttoncolor button" onclick="openSidePanelV2()"><i class="fa-solid fa-bars buttonlines"></i></button>
+                        <h1 class="titlefont Mochiyuki">Mochiyuki Huang</h1>
+                        <div class="social-bar">
+                        <ul style="list-style-type:none;" class="social-links">
+                            <li><i class="fa-brands fa-facebook-f facebook"></i></li>
+                            <li><i class="fa-brands fa-instagram instagram"></i></li>
+                            <li><i class="fa-regular fa-envelope email"></i></li>
+                        </ul>  
+                        </div>
+                    </div>
+                </header>
+
+                <div class="page-header">
+                    <div class="page-header-inner">
+
+                        <div class="page-header_left">
+                            <div class="dog cursorPointer" onclick="galleryPage()"><i class="fa-solid fa-dog"></i>
+                                <div class=" headerBtn">photos of me</div>
+                            </div>
+                        </div>
+                        
+                        <div class="page-header_middle">WELCOME</div>
+                        
+                        <div href="./Diary.html" class="page-header_right">
+                            <div class="cursorPointer"><div class=headerBtn onclick="diaryPage()">my dear diary</div><i class="fa-solid fa-book"></i></div>
+                        </div>
+                    
+                    </div>
+                </div>
+                
+                <div class="main-bottom">
+
+                    <div class="left-card">
+                        <i class="fa-solid fa-plus plus-button"></i>
+                    </div>
+
+                    <div class="card">
+                        <img src="c.png" alt="Serious Mochiyuki" width="15%" id="seriousMochi" class="mochiGlow"/>
+                        <img src="a.png" alt="Happy Mochiyuki" width="26%" class="mochiGlow"/>
+                        <img src="b.png" alt="Mighty Mochiyuki" width="24%" class="mochiGlow"/>
+                    </div>
+                    <div class="right-card">
+                        <ul style="list-style-type:none;" class="buttons-list">
+                            <i class="fa-solid fa-heart heart-button" id="heartButton"></i>
+                            <i class="fa-solid fa-circle circle-button"></i></i>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- THIS A TUTORIAL PLAYGROUND / SANDBOX
+        <div>
+            Input Here:<input id="newTextInput" type="text"/>
+            <button id="clickMeButton" onclick="translateText()">CLICK ME</button>
+            <span id="displayTextSpan">ABCD</span>
+        </div>
+        -->
+
+
+    </body>
+
+</html>

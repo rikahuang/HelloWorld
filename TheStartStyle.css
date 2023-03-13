@@ -1,0 +1,325 @@
+body {
+    background-color: rgb(251, 208, 218);
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.4) 1px, transparent 1px);
+    font-family: 'Silkscreen', cursive;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0px;
+    width: 100wv;
+}
+
+.mainWrap {
+    width: 62%;
+    margin: 0 auto;
+    min-width: 740px;
+}
+
+.button {
+    padding: 0;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.sidePanel {
+    padding-bottom: 2em;
+    width: 22vw;
+    position: absolute;
+    background: rgb(251 208 218);
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(247,161,181,0.4) 1px, transparent 1px), linear-gradient(to bottom, rgba(247,161,181,0.4) 1px, transparent 1px);
+    border: 6px solid rgb(247,161,181);
+    z-index: 100;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.sidePanelHide {
+    display: none;
+}
+
+.sidePanelDisplay {
+    display: inline-block;
+}
+
+.sidePanelBar{
+    background: rgb(247,161,181);
+    padding: 0.25em 0.5em;
+    text-align: right;
+}
+
+.XIcon {
+    color: rgb(255,255,255);
+    cursor: pointer;
+}
+
+.sidePanelMenu {
+    color: rgb(255,255,255);
+    text-align: center;
+}
+
+.sidePanelButtons {
+    background-color: rgb(255,255,255);
+    border: 3px solid rgb(247,161,181);
+    color: rgb(247,161,181);
+    border-radius: 1em;
+    padding: 1em;
+    font-size: 20px;
+    font-family: 'Silkscreen', cursive;
+    cursor: pointer;
+    width: 60%;
+    margin: 1em;
+    margin-bottom: 0em;
+    text-shadow: 8px 5px 11px antiquewhite;
+}
+
+.sidePanelButtons:hover {
+    color: antiquewhite;
+    border-color: antiquewhite;
+    box-shadow: 6px 6px 0px antiquewhite;
+
+}
+
+.Mochiyuki {
+    color: white;
+    font-weight:bold;
+    font-size: 70px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: left;
+    margin: 20px auto;
+    text-shadow: 8px 5px 11px whitesmoke;
+    cursor: default;
+}
+
+.social-links {
+    display:flex;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.facebook {
+    font-size: 25px;
+    color: rgb(247, 161, 181);
+    cursor: pointer;
+}
+
+.instagram {
+    font-size: 25px;
+    margin-left: 16px;
+    color: rgb(247, 161, 181);
+    cursor: pointer;
+}
+
+.email {
+    font-size: 25px;
+    margin-left: 16px;
+    color: rgb(247, 161, 181);
+    cursor: pointer;
+}
+
+.buttonlines {
+    color: rgb(247, 161, 181);
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.buttoncolor {
+    border: none;
+    background: rgba(255, 204, 204,0); 
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    box-sizing: inherit;
+}
+
+.titlefont {
+    font-family: 'Indie Flower', cursive;
+    text-transform: lowercase;
+}
+
+.site-header-inner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 6px dashed rgb(247, 161, 181);
+    min-width: 1191px;
+
+}
+
+.page-header {
+    padding: 40px;  
+    box-sizing: inherit;
+}
+
+.page-header-inner {
+    display:flex;
+    justify-content: space-between;
+    box-sizing: inherit;
+}
+
+.page-header_left {
+    width: 25%;
+    min-width: 278px;
+    display: flex;
+    align-items: center;
+    box-sizing: inherit;
+}
+
+.dog {
+    font-size: 30px;
+    color: rgb(247, 161, 181);
+    margin-right: 16px;
+}
+
+.hyperlinks {
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-header_middle {
+    font-family: 'Silkscreen', cursive;
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(247, 161, 181);
+    width: 50%;
+    min-width: 555px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: inherit;
+    font-style: italic;
+    animation: opacity 2s ease-in-out infinite;
+    opacity: 1;
+    
+}
+
+@keyframes opacity {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+.page-header_right {
+    color: rgb(247, 161, 181);
+    width: 25%;
+    min-width: 278px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    box-sizing: inherit;
+}
+
+
+.fa-book {
+    margin-left: 16px;
+    font-size: 30px;
+}
+
+.main-bottom {
+    border: 10px solid rgb(247, 161, 181);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5em;
+    outline: 7px solid rgb(255,255,255);
+    background: rgb(255,195,209);
+    box-shadow: 18px 18px 0px 13px rgb(247,161,181);
+    width: 59em;
+    height: 28em;
+
+}
+
+.left-card {
+    width: 24%;
+    color: rgb(247, 161, 181);
+    font-size: 100px;
+    text-align: center;
+    -webkit-text-stroke: 3px;
+    -webkit-text-fill-color: white;
+    text-shadow: 8px 5px 0px;
+}
+
+.plus-button:hover {
+    color:antiquewhite;
+    font-size: 110px;
+    cursor: pointer;
+}
+
+.card {
+    border: 4px solid rgb(247,161,181);
+    outline: 25px solid rgb(255,188,204);
+    background: rgba(255,255,255,0.5);
+    border-radius: 0.5em;
+    box-shadow: inset 0px 0px 20px 20px rgb(255, 244, 247), 13px 13px 0px 20px rgb(239, 148, 169) ; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    width: 52%;
+
+}
+
+.mochiGlow {
+    filter: drop-shadow(12px 0px 3px white);
+}
+
+.right-card {
+    text-align: center;
+    width: 24%
+}
+
+
+.buttons-list {
+    padding: 0px;
+}
+
+.circle-button {
+    color: rgb(247, 161, 181);
+    font-size: 70px;
+    text-indent: -50px;
+    -webkit-text-stroke: 3px;
+    -webkit-text-fill-color: white;
+    text-shadow: 8px 5px 0px;
+    cursor: pointer;
+}
+
+.circle-button:hover {
+    color:antiquewhite;
+    font-size: 80px;
+}
+
+.heart-button {
+    color: rgb(247, 161, 181);
+    font-size: 75px;
+    text-indent: 80px;
+    -webkit-text-stroke: 3px;
+    -webkit-text-fill-color: white;
+    text-shadow: 8px 5px 0px;
+    cursor: pointer;
+    display: block !important;
+}
+
+.heart-button:hover {
+    color:antiquewhite;
+    font-size: 85px;
+}
+
+.headerBtn {
+    color: rgb(247, 161, 181);
+    font-size: 20px;
+    display: inline-block;
+
+}
