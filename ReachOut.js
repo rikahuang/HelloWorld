@@ -1,14 +1,3 @@
-/*
-
-JQuery Version of Open Side Panel Function
-
-function openSidePanel() {
-    var sidePanel = $("#sidePanel"); 
-    sidePanel.removeClass("sidePanelHide");
-    sidePanel.addClass("sidePanelDisplay");
-}
-*/
-
 function openSidePanelV2() {
     var sidePanel = document.getElementById("sidePanel");
     sidePanel.classList.remove("sidePanelHide");
@@ -16,9 +5,9 @@ function openSidePanelV2() {
 }
 
 function closeSidePanel() {
-    var sidePanel = $("#sidePanel");
-    sidePanel.removeClass("sidePanelDisplay");
-    sidePanel.addClass("sidePanelHide");
+    var sidePanel = document.getElementById("sidePanel");
+    sidePanel.classList.remove("sidePanelDisplay");
+    sidePanel.classList.add("sidePanelHide");
 }
 
 function homePage() {
@@ -44,13 +33,3 @@ function calculatorPage() {
 function faqPage() {
     window.open("FAQ.html", "_self");
 }
-
-/*
-function translateText() {
-    var inputTextHtmlElement = document.getElementById("newTextInput");
-    var inputText = inputTextHtmlElement.value;
-    var displaySpan = document.getElementById("displayTextSpan");
-    displaySpan.innerHTML = inputText;
-}
-
-*/

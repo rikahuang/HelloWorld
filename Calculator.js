@@ -15,6 +15,10 @@ function closeSidePanel() {
     sidePanel.addClass("sidePanelHide");
 }
 
+function homePage() {
+    window.open("index.html", "_self");
+}
+
 function diaryPage() {
     window.open("DearDiary.html", "_self");
 }

@@ -10,6 +10,10 @@ function closeSidePanel() {
     sidePanel.classList.add("sidePanelHide");
 }
 
+function homePage() {
+    window.open("index.html", "_self");
+}
+
 function diaryPage() {
     window.open("DearDiary.html", "_self");
 }

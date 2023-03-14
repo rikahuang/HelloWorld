@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="DearDiary.css" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/73ee127a71.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script type="text/javascript" src="DearDiary.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100;0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100;0,400;0,600;1,400;1,600&display=swap'); </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+    </head>
+
+    <body>
+
+        <div class="sidePanel sidePanelHide" id="sidePanel">
+            <div class="sidePanelBar"><i class="fa-solid fa-xmark XIcon" onclick="closeSidePanel()"></i></div>
+            <div class="sidePanelMenu">
+                <button class="sidePanelButtons" onclick="homePage()">home</button>
+                <button class="sidePanelButtons" onclick="diaryPage()">dear diary</button>
+                <button class="sidePanelButtons" onclick="galleryPage()">photos of me</button>
+                <button class="sidePanelButtons" onclick="calculatorPage()">calculator</button>
+                <button class="sidePanelButtons" onclick="contactPage()">reach out</button>
+                <button class="sidePanelButtons" onclick="faqPage()">faq</button>
+            </div>
+        </div>
+
+        <div class="mainWrap">
+
+            <header>
+                <div class="site-header-inner">
+                    <button class="buttoncolor" onclick="openSidePanelV2()"><i class="fa-solid fa-bars buttonlines"></i></button>
+                    <div class="empty">&nbsp;</div>
+                </div>
+            </header>
+
+            <div>
+                <div class="navList">
+                    <ul class="breadcrumbList">
+                        <li class="BCTheStart"><a href="./index.html" class="theStartLink">home</a></li>
+                        <li class="BCDearDiary">dear diary</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="siteBottom">
+
+            <div class="book" >
+                <div id="pg7" class="back"></div>
+                <div id="pg6" class="page6" onclick="flipBook(6)"></div>
+                <div id="pg5" class="page5" onclick="flipBook(5)"></div>
+                
+                <div id="pg4" class="page4" onclick="flipBook(4)">
+                    <div class="bkPgHide">
+                        <p class="dDate">12/25/2022</p>
+                        <div class="drawingBox">
+                            <img src="MochMomCroppedTrans.png" class="mochiDrawing"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="pg3" class="page3" onclick="flipBook(3)">
+                    <div class="bkPgHide">
+                        <p class="dDate">04/27/2019</p>
+                        <p class="dContent">Today is my 1st birthday! Momma threw me a burfday party and invited some friends to our house. I got so many burfday tweats. Momma dressed me up in a funny costume. I had a triangular cone hat thing and a sparkly blue bowtie. I didn't like it but I had to keep it on. How embarassing!!! We played the whole day, went for nice walkys and guess what? She even made me steak! Lastly, momma and papa surprised me with presents. Plushies are my favourite! I like to tear them apart until all the white fluffy things come out. I can't wait for my many more burfdays to come!</p>
+                    </div>
+                </div>
+                
+                <div id="pg2" class="page2" onclick="flipBook(2)">
+                    <div class="bkPgHide">
+                        <p class="dDate">12/13/2018</p>
+                        <p class="dContent">Today I met my momma and papa for the first time. I remember seeing bright light coming through my metal crate door and I saw momma's face peep through the door and call me Winston. She waved at me but I was too scared to come out! Papa drove me home, and during the ride, momma was feeding me bacon tweats. Yum!!! When I got home, momma and papa opened the crate door and I felt safe enough to come out. They gave me a bath and walkys. When momma left to go shower, I stayed by the bathroom door and waited for her. After momma tucked me into bed and went to her bed, I cried and momma came back to me. She gave me pets and stayed next to me the whole night. I don't think momma slept that night hehe. </p>
+                    </div>
+                </div>
+                
+                <div id="pg1" class="page1" onclick="flipBook(1)">
+                    <div class="sun bkPgHide">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/dlmpudxq.json"
+                            trigger="loop"
+                            delay="10"
+                            colors="primary:#2ca58d,secondary:#ffc738,tertiary:#f7a1b5"
+                            style="width:300px;height:300px">
+                        </lord-icon>
+                    </div>
+                    <div class="innerCover bkPgHide">
+                        <div class="paraBox">
+                            <p class="MD">Mochi's Diary</p>
+                            <p class="MD">By: Mochiyuki Huang</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="pg0" class="front openBook ">
+                    <div class="dand">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/jrvgelei.json"
+                            trigger="loop"
+                            delay="10"
+                            colors="primary:#ebe6ef,secondary:#f7a1b5,tertiary:#2ca58d"
+                            style="width:200px;height:200px">
+                        </lord-icon>
+                    </div>
+                    <div class="dais">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/ikgpexar.json"
+                            trigger="loop"
+                            delay="10"
+                            colors="primary:#f7a1b5,secondary:#ffc738"
+                            style="width:250px;height:250px">
+                        </lord-icon>
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+
+    </body>
+
+
+
+
+</html>
+

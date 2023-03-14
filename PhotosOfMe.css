@@ -1,0 +1,149 @@
+*{
+    font-family: 'Silkscreen', cursive;;
+}
+
+body {
+    background-color: rgb(251, 208, 218);
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.4) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.4) 1px, transparent 1px);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    color: rgb(247,161,181);   
+    width: 100vw;
+    cursor: default;
+}
+
+button {
+    padding: 0;
+}
+
+.mainWrap {
+    width: 62%;
+    margin: 0 auto;
+    min-width: 740px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.sidePanel {
+    padding-bottom: 2em;
+    width: 22vw;
+    position: absolute;
+    background: rgb(251 208 218);
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(247,161,181,0.4) 1px, transparent 1px), linear-gradient(to bottom, rgba(247,161,181,0.4) 1px, transparent 1px);
+    border: 6px solid rgb(247,161,181);
+    z-index: 100;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    left: 0;
+}
+
+.sidePanelHide {
+    display: none;
+}
+
+.sidePanelDisplay {
+    display: inline-block;
+}
+
+.sidePanelBar{
+    background: rgb(247,161,181);
+    padding: 0.25em 0.5em;
+    text-align: right;
+}
+
+.XIcon {
+    color: rgb(255,255,255);
+    cursor: pointer;
+}
+
+.sidePanelMenu {
+    color: rgb(255,255,255);
+    text-align: center;
+}
+
+.sidePanelButtons {
+    background-color: rgb(255,255,255);
+    border: 3px solid rgb(247,161,181);
+    color: rgb(247,161,181);
+    border-radius: 1em;
+    padding: 1em;
+    font-size: 20px;
+    cursor: pointer;
+    width: 60%;
+    margin: 1em;
+    margin-bottom: 0em;
+    text-shadow: 8px 5px 11px antiquewhite;
+}
+
+.sidePanelButtons:hover {
+    color: antiquewhite;
+    border-color: antiquewhite;
+    box-shadow: 8px 5px 0px antiquewhite;
+
+}
+
+.site-header-inner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.buttonlines {
+    color: rgb(247, 161, 181);
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.buttoncolor {
+    border: none;
+    background: rgba(255, 204, 204,0); 
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    box-sizing: inherit;
+}
+
+.empty {
+    height: 102px;
+    margin: 20px auto;
+}
+
+.navList {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0.95em;
+}
+
+.breadcrumbList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.breadcrumbList li+li:before {
+    padding: 8px;
+    color:  rgb(247,161,181);;
+    content: "/\00a0";
+}
+
+.BCTheStart {
+    display: inline;
+}
+
+.theStartLink {
+    text-decoration: none;
+    color:rgb(247, 161, 181);
+    font-weight: 800;
+}
+
+.BCDearDiary {
+    display: inline;
+    color: rgb(247,161,181);
+    cursor: text;
+}
