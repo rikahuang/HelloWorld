@@ -1,6 +1,6 @@
 var gallery = [
     {
-        "image": "IMG_2220.jpg",
+        "image": "IMG_2220.JPG",
         "caption": "flowa powa",
         "class": "frameLt"
     },
@@ -15,12 +15,12 @@ var gallery = [
         "class": "frameLt"
     },
     {
-        "image": "IMG_1691.jpg",
+        "image": "IMG_1691.JPG",
         "caption": "me so handsome",
         "class": "frameRt"
     },
     {
-        "image": "IMG_9025.jpg",
+        "image": "IMG_9025.JPG",
         "caption": "fluffy fluffy snow",
         "class": "frameLt"
     },
