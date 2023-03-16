@@ -11,7 +11,7 @@ body {
     margin: 0px;
     color: rgb(247,161,181);   
     width: 100vw;
-    cursor: default;
+    overflow-x: hidden;
 }
 
 button {
@@ -26,6 +26,10 @@ button {
 
 .hide {
     display: none !important;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 .sidePanel {
@@ -146,4 +150,53 @@ ul.breadcrumbList li+li:before {
     display: inline;
     color: rgb(247,161,181);
     cursor: text;
+}
+
+.galleryRow {
+    display: flex;
+    justify-content: center;
+    min-width: 1190px;
+    margin-top: 3em;
+}
+
+.picFrame {
+    width: 440px;
+    height: 610px;
+    background-color: white;
+    border: rgb(251, 208, 218) solid 6px;
+    border-radius: 0.2em;
+    outline: rgb(255 195 209) solid 6px;
+    box-shadow: 14px 14px 0px 8px rgb(247 161 181);
+}
+
+.frameLt {
+    margin-right: 50px;
+}
+
+.frameRt {
+    margin-left: 50px;
+}
+
+.picFrameInner {
+    width: 80%;
+    height: 469px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: rgb(255 195 209) solid 6px;
+    border-radius: 0.2em;
+}
+
+.imgSize {
+    width: 100%;
+}
+
+.mainGallery {
+    margin-bottom: 5em;
+}
+
+.caption {
+    text-align: center;
+    font-family: Indie Flower ,cursive;
+    margin-top: 20px;
+    font-size: 30px;
 }
