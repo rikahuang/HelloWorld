@@ -94,6 +94,7 @@ function loadGallery() {
             outerFrame.classList.add("picFrame");
             outerFrame.classList.add("pointer");
             outerFrame.classList.add(gallery[galleryIndex].class);
+            outerFrame.setAttribute("onclick", "openPic(" + galleryIndex + ")")
 
             outerFrame.appendChild(innerFrame);
             outerFrame.appendChild(cap);
@@ -114,3 +115,19 @@ window.addEventListener("load", function(){
     loadGallery();
 })
 
+function openPic(num) {
+    var pic = document.getElementById("imgIndex" + num);
+    pic.classList.remove("hide");
+    var body = document.getElementById("body1");
+    body.classList.add("scrollDisabled");
+}
+
+function closePic(e, numb) {
+    
+    if (e.target.tagName != "IMG") {
+        var pic = document.getElementById("imgIndex" + numb);
+        pic.classList.add("hide");
+        var body = document.getElementById("body1");
+        body.classList.remove("scrollDisabled");
+    }
+}

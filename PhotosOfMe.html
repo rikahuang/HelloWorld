@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body id="body1">
 
         <div class="sidePanel sidePanelHide" id="sidePanel">
             <div class="sidePanelBar"><i class="fa-solid fa-xmark XIcon" onclick="closeSidePanel()"></i></div>
@@ -25,6 +25,47 @@
                 <button class="sidePanelButtons" onclick="contactPage()">reach out</button>
                 <button class="sidePanelButtons" onclick="faqPage()">faq</button>
             </div>
+        </div>
+
+        <div id="openedGallery">
+
+            <div class="bkBlur hide" id="imgIndex0" onclick="closePic(event,0)">
+                <div class="largeFrame">
+                    <img src="IMG_2220.JPG" class="large">
+                    <i class="fa-solid fa-xmark XIcon xLarge"></i>
+                </div>
+            </div>
+            <div class="bkBlur hide" id="imgIndex1" onclick="closePic(event,1)">
+                <div class="largeFrame">
+                    <img src="IMG_0551.jpg" class="large">
+                    <i class="fa-solid fa-xmark XIcon xLarge" ></i>
+                </div>
+            </div>
+            <div class="bkBlur hide" id="imgIndex2" onclick="closePic(event,2)">
+                <div class="largeFrame">
+                    <img src="IMG_0881.jpg" class="large">
+                    <i class="fa-solid fa-xmark XIcon xLarge" ></i>
+                </div>
+            </div>
+            <div class="bkBlur hide" id="imgIndex3" onclick="closePic(event,3)">
+                <div class="largeFrame">
+                    <img src="IMG_1691.JPG" class="large">
+                    <i class="fa-solid fa-xmark XIcon xLarge" ></i>
+                </div>
+            </div>
+            <div class="bkBlur hide" id="imgIndex4" onclick="closePic(event,4)">
+                <div class="largeFrame">
+                    <img src="IMG_9025.JPG" class="large">
+                    <i class="fa-solid fa-xmark XIcon xLarge" ></i>
+                </div>
+            </div>
+            <div class="bkBlur hide" id="imgIndex5" onclick="closePic(event,5)">
+                <div class="largeFrame">
+                    <img src="IMG_9355.jpg" class="large">
+                    <i class="fa-solid fa-xmark XIcon xLarge" ></i>
+                </div>
+            </div>
+            
         </div>
 
         <div class="mainWrap">
@@ -48,17 +89,18 @@
             <div>
                 
                 <div class="mainGallery" id="MG">
+                
                 <!--
                     <div class="galleryRow">
 
-                        <div class="picFrame frameLt pointer">
+                        <div class="picFrame frameLt pointer" onclick="openPic(0)">
                             <div class="picFrameInner">
                                 <img src="IMG_2220.jpg" class="imgSize"/>
                             </div>
                             <div class="caption">flowa powa</div>
                         </div>
                         
-                        <div class="picFrame frameRt pointer">
+                        <div class="picFrame frameRt pointer" onclick="openPic(1)">
                             <div class="picFrameInner">
                                 <img src="IMG_0551.jpg" class="imgSize"/>
                             </div>
@@ -68,13 +110,13 @@
 
                     <div class="galleryRow">
                        
-                        <div class="picFrame frameLt pointer">
+                        <div class="picFrame frameLt pointer" onclick="openPic(2)">
                             <div class="picFrameInner">
                                 <img src="IMG_0881.jpg" class="imgSize"/>
                             </div>
                             <div class="caption">cheese!!!</div>
                         </div>
-                        <div class="picFrame frameRt pointer">
+                        <div class="picFrame frameRt pointer" onclick="openPic(3)">
                             <div class="picFrameInner">
                                 <img src="IMG_1691.jpg" class="imgSize"/>
                             </div>
@@ -84,13 +126,13 @@
 
                     <div class="galleryRow">
                        
-                        <div class="picFrame frameLt pointer">
+                        <div class="picFrame frameLt pointer" onclick="openPic(4)">
                             <div class="picFrameInner">
                                 <img src="IMG_9025.jpg" class="imgSize"/>
                             </div>
                             <div class="caption">fluffy fluffy snow</div>
                         </div>
-                        <div class="picFrame frameRt pointer">
+                        <div class="picFrame frameRt pointer" onclick="openPic(5)">
                             <div class="picFrameInner">
                                 <img src="IMG_9355.jpg" class="imgSize"/>
                             </div>
@@ -98,6 +140,7 @@
                         </div>
                     </div>
                 -->
+                
                 </div>
                 
 

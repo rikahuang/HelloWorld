@@ -200,3 +200,43 @@ ul.breadcrumbList li+li:before {
     margin-top: 20px;
     font-size: 30px;
 }
+
+.bkBlur {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(155,125,132, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+.largeFrame {
+    position: fixed;
+    z-index: 2;
+    width: 703px;
+    height: 937px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.large {
+    position: fixed;
+    z-index: 3;
+    height: 90%;
+    border-radius: 0.5em;
+}
+
+.xLarge {
+    position: fixed;
+    z-index: 4;
+    transform: translate(270px, -390px);
+    font-size: 30px;
+}
+
+.scrollDisabled {
+    height: 100vh;
+    overflow-y: hidden;
+}
