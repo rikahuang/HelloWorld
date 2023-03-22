@@ -147,3 +147,146 @@ ul.breadcrumbList li+li:before {
     color: rgb(247,161,181);
     cursor: text;
 }
+
+.contactHeading {
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+}
+
+.contactBottom{
+    display: flex;
+    justify-content: center;
+}
+
+.contactForm {
+    display: flex;
+    height: 400px;
+    width: 790px;
+    border: rgb(255 195 209) 6px solid;
+    padding: 40px;
+    background: rgb(251, 208, 218);
+    outline: white solid 6px;
+    box-shadow: 16px 16px 0px 8px rgb(247 161 181);
+    border-radius: 1em;
+}
+
+.formFormat {
+    width: 50%;
+}
+
+.spacing {
+    padding: 5px 0;
+}
+
+input {
+    border: rgb(247 161 181) solid 3px;
+    border-radius: 0.5em;
+    background-color: rgb(251, 208, 218);
+    font-size: 20px;
+    color: white;
+    line-height: 1.5;
+    box-shadow: 4px 4px 0px 3px rgb(247 161 181);
+}
+
+input[type=text]:focus, :focus-visible {
+    border: antiquewhite solid 3px;
+    outline: 0;
+    box-shadow: 4px 4px 0px 3px antiquewhite;
+}
+
+.messageInput {
+    border: rgb(247 161 181) solid 3px;
+    border-radius: 0.5em;
+    background-color: rgb(251, 208, 218);
+    font-size: 20px;
+    color: white;
+    width: 368px;
+    height: 193px;
+    resize: none;
+    box-shadow: 6px 6px 0px 3px rgb(247 161 181);
+}
+
+.messageInput:focus {
+    border: antiquewhite solid 3px;
+    box-shadow: 6px 6px 0px 3px antiquewhite;
+}
+
+.submitBTN {
+    border: rgb(247 161 181) solid 3px;
+    border-radius: 0.5em;
+    background-color: rgb(251, 208, 218);
+    font-size: 20px;
+    color: rgb(247 161 181);
+    PADDING: 6px;
+    transform: translate(280px, 38px);
+    box-shadow: 4px 4px 0px 3px rgb(247 161 181);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.submitBTN:hover {
+    border-color: antiquewhite;
+    color: antiquewhite;
+    box-shadow: 4px 4px 0px 3px antiquewhite;
+    background-color: white;
+}
+
+.submittedBottom{
+    display: flex;
+    justify-content: center;   
+}
+
+.widthHide {
+    width: 0px !important;
+    height: 0px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.rcvdBox {
+    width: 400px;
+    height: 78px;
+    overflow: hidden; 
+    border: rgb(255 195 209) solid 6px;
+    outline: white solid 6px;
+    background-color: rgb(251, 208, 218);
+    padding: 30px;
+    border-radius: 1em;
+    box-shadow: 8px 8px 0px 9px rgb(247 161 181);
+    transform: translateY(120px);
+
+    --bg-size: 400%;
+    --color-one: rgb(250, 235, 215);
+    --color-two: rgb(247 161 181);
+    background: linear-gradient(
+                135deg,
+                var(--color-one),
+                var(--color-two),
+                var(--color-one)
+              ) 0 0 / var(--bg-size) 100%;
+    color: white;
+    animation: move-bg 7s infinite linear;
+
+    transition: width 1s;
+    
+}
+
+@keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+
+.fillMsg {
+    z-index: 1;
+    position: fixed;
+    transform: translateY(415px);
+}
+
+
+  

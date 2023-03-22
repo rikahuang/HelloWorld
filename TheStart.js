@@ -54,3 +54,18 @@ function translateText() {
 }
 
 */
+
+function clickCross() {
+    var sMochi = document.getElementById("seriousMochi");
+    sMochi.classList.toggle("mochiGlow1");
+}
+
+function clickheart() {
+    var sMochi = document.getElementById("happyMochi");
+    sMochi.classList.toggle("mochiGlow2");
+}
+
+function clickCircle() {
+    var sMochi = document.getElementById("mightyMochi");
+    sMochi.classList.toggle("mochiGlow3");
+}

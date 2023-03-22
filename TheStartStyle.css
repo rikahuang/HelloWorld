@@ -323,3 +323,15 @@ body {
     display: inline-block;
 
 }
+
+.mochiGlow1 {
+    filter: drop-shadow(12px 0px 3px rgb(208, 251, 251));
+}
+
+.mochiGlow2 {
+    filter: drop-shadow(12px 0px 3px rgb(251, 251, 208));
+}
+
+.mochiGlow3 {
+    filter: drop-shadow(12px 0px 3px rgb(230, 208, 251));
+}

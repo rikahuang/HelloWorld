@@ -45,39 +45,61 @@
                 </div>
             </div>
 
-            <div>
-                
-                <div class="leftForm">
-                    <div>CONTACT ME</div>       
-                    <div>
-                        <label>First Name</label>
-                        <input type="text"/>
-                    </div>
+            <div><p class="contactHeading " id="cHeading">CONTACT ME</p></div>
+
+            <div class="contactBottom " id="cBottom">
+                <div class="contactForm">
                     
-                    <div>
-                        <label>Last Name</label>
-                        <input type="text"/>
+                    <div class="formFormat leftForm">       
+                        <div class="spacing">
+                            <label>First Name</label>
+                        </div>
+                        <div class="spacing">
+                            <input type="text" id="firstName"/>
+                        </div>
+                        
+                        <div class="spacing">
+                            <label>Last Name</label>
+                        </div>
+                        <div class="spacing">
+                            <input type="text" id="lastName"/>
+                        </div>
+
+                        <div class="spacing">
+                            <label>Email</label>
+                        </div>
+                        <div class="spacing">
+                            <input type="text" id="emailAdd"/>
+                        </div>
+
+                        <div class="spacing">
+                            <label>Phone</label>
+                        </div>
+                        <div class="spacing">
+                            <input type="text" id="phoneNum"/>
+                        </div>
                     </div>
 
-                    <div>
-                        <label>Email</label>
-                        <input type="text"/>
+                    <div class="formFormat rightForm">
+                        <div class="spacing">
+                            <label>Message</label>
+                        </div>
+                        <div class="spacing">
+                            <textarea class="messageInput" id="msgBox"></textarea>
+                        </div>
+                        
+                        <button class="submitBTN" onclick="showSentMsg()">SUBMIT</button>
+
                     </div>
 
                 </div>
 
-                <div class="rightForm">
-                    <div>
-                        <label>Phone</label>
-                        <input type="text"/>
-                    </div>
+                <div class="fillMsg hide" id="errorMsg">Nope! Please fill out all boxes!</div>
 
-                    <div>
-                        <label>Message</label>
-                        <input type="text"/>
-                    </div>
-                </div>
+            </div>
 
+            <div class="submittedBottom">
+                <div class="rcvdBox widthHide" id="sentMsg">RECEIVED! THANKS FOR WRITING TO ME! I WILL GET BACK TO YOU SOON... MAYBE HEHE</div>
             </div>
 
         </div>
